@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sayfası</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="MEG.css">
+    <style>
+        /* Genel buton stilleri */
+        .language-switcher button {
+            background-color: #050505;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hover (üzerine gelindiğinde) efekt */
+        .language-switcher button:hover {
+            background-color: #080808;  /* Butonun rengi değişir */
+            transform: scale(1.1);      /* Buton hafif büyür */
+        }
+
+        /* Tıklama (aktif) durumunda buton efekti */
+        .language-switcher button:active {
+            transform: scale(1);        /* Buton tıklanınca eski boyutuna döner */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge azalır */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="language-switcher">
+            <button id="turkishBtn">Türkçe</button>
+            <button id="englishBtn">English</button>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <div class="photo-area">
+                <img src="images/PROFIL.JPG" alt="Fotoğrafınız">
+                <p id="photo-caption">MARAZ ALİ</p>
+            </div>
+
+            <ul class="contact-info">
+                <li><a href="mailto:example@example.com"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article>
+                <h1 id="blog-title">ÖZ GEÇMİŞ</h1>
+                <p id="first-blog-content">Bu, blog yazısının içeriğidir. Detaylı bilgiler burada yer alır...</p>
+            </article>
+            
+            <article>
+                <h2 id="education-title">EĞİTİM</h2>
+                <p id="education-content">Eğitim ile ilgili içerik burada yer alacak...</p>
+            </article>
+
+            <article>
+                <h3 id="experience-title">İŞ DENEYİMİ</h3>
+                <p id="experience-content">İş deneyimi içerikleri burada yer alacak...</p>
+            </article>
+
+            <article>
+                <h4 id="certificates-title">KURS VE SERTİFİKALAR</h4>
+                <p id="certificates-content">Kurs ve sertifikalar içerikleri burada yer alacak...</p>
+            </article>
+
+            <article>
+                <h5 id="languages-title">YABANCI DİL BİLGİSİ</h5>
+                <p id="languages-content">Yabancı dil bilgisi içerikleri burada yer alacak...</p>
+            </article>
+
+            <article>
+                <h6 id="skills-title">BECERİLER</h6>
+                <p id="skills-content">Beceriler içerikleri burada yer alacak...</p>
+            </article>
+            
+            <article>
+                <h6 id="interests-title">İLGİ ALANLARI</h6>
+                <p id="interests-content">İlgi alanları içerikleri burada yer alacak...</p>
+            </article>
+
+            <article>
+                <h6 id="personal-info-title">KİŞİSEL BİLGİLER</h6>
+                <p id="dob-content">DOĞUM TARİHİ: <a>Enes</a></p>
+                <p id="gender-content">CİNSİYET: <a>Enes</a></p>
+                <p id="birthplace-content">DOĞUM YERİ: <a>Enes</a></p>
+                <p id="marital-status-content">MEDENİ DURUM: <a>Enes</a></p>
+                <p id="military-status-content">ASKERLİK DURUMU: <a>Enes</a></p>
+                <p id="license-type-content">EHLİYET TİPİ: <a>Enes</a></p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text">© 2024 Blog Sayfası. Tüm hakları saklıdır.</p>
+        <p id="footer-author">Enes Gençoğlu :)</p>
+    </footer>
+
+    <script src="MEG.js"></script>
+</body>
+</html>

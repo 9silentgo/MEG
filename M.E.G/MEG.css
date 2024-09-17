@@ -1,0 +1,152 @@
+/* Tüm kutular için margin ve padding sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('images/background.png'); /* Arka plan resmi */
+    background-size: cover; /* Resmin sayfayı tamamen kaplamasını sağlar */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    color: #000 ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header ayarları (şeffaflık eklenmiş) */
+
+
+/* Navbar ayarları */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Ana içerik ayarları */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin: 20px;
+}
+
+/* Sidebar (İletişim kutusu) */
+.sidebar {
+    width: 16%;
+    background: rgba(255, 255, 255, 0.2); /* %20 şeffaf arka plan */
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.photo-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo-area img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info li {
+    margin: 0 10px;
+}
+
+.contact-info li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+}
+
+/* İçerik kısmı */
+.content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2); /* %20 şeffaf arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Genel buton stilleri */
+.language-switcher button {
+    background-color: #080808;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover (üzerine gelindiğinde) efekt */
+.language-switcher button:hover {
+    background-color: #0a0a0a;  /* Butonun rengi değişir */
+    transform: scale(1.1);      /* Buton hafif büyür */
+}
+
+/* Tıklama (aktif) durumunda buton efekti */
+.language-switcher button:active {
+    transform: scale(1);        /* Buton tıklanınca eski boyutuna döner */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge azalır */
+}
+
+
+
+
+article {
+    margin-bottom: 20px;
+}
+
+/* Başlıkların aynı boyutta olması */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Beceriler ile İlgi Alanları arasında boşluk */
+article:last-of-type {
+    margin-top: 20px;
+}
+
+/* Footer ayarları (şeffaflık eklenmiş) */
+footer {
+    background: rgba(6, 6, 6, 0.2); /* %20 şeffaf arka plan */
+    color: #f3efef;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
