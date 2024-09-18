@@ -1,4 +1,4 @@
-/* Tüm kutular için margin ve padding sıfırlama */
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +97,7 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Genel buton stilleri */
+/* buton */
 .language-switcher button {
     background-color: #080808;
     color: white;
@@ -136,12 +136,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
 
-/* Beceriler ile İlgi Alanları arasında boşluk */
+
 article:last-of-type {
     margin-top: 20px;
 }
 
-/* Footer ayarları (şeffaflık eklenmiş) */
+
 footer {
     background: rgba(6, 6, 6, 0.2); /* %20 şeffaf arka plan */
     color: #f3efef;
